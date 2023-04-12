@@ -7,8 +7,8 @@ async function sendEmail(req, res) {
     let { name, email, message } = req.body;
 
     const msg = {
-      to: 'spicetownguitars@gmail.com',
-      from: 'repair@spicetownguitars.com',
+      to: 'steveo732@gmail.com',
+      from: 'message@portfolio.com',
       subject: 'Message from ' + name,
       text: `
         Name: ${name}
