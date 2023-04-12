@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
 
     const msg = {
       to: 'steveo732@gmail.com',
-      from: 'message@portfolio.com',
+      from: 'message@personalportfolio.net',
       subject: 'Message from ' + name,
       text: `
         Name: ${name}
@@ -20,6 +20,7 @@ async function sendEmail(req, res) {
         <p>Message: ${message}</p>
       `,
     };
+    
 
     mailgun.messages().send(msg, (error, body) => {
       if (error) {
